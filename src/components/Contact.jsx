@@ -34,7 +34,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="w-[80%] mx-auto p-6 sm:flex justify-center bg-white py-12">
+    <div className="overflow-hidden w-[80%] mx-auto p-6 sm:flex justify-center bg-white py-12">
       <img
         ref={imageRef}
         src="/Image/profilepic/1.jpg"

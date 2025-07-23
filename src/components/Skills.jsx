@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <div id='skills' className='space-y-2  w-[85%] m-auto'>
       <div className="">
-        <h1 className="text-center text-3xl font-semibold tracking-tighter">Skills</h1>
+        <h1 className="text-center text-[28px] font-semibold tracking-tighter">Skills</h1>
       </div>
       <div className="flex item text-sm justify-center">
       <TechnicalSkills/>

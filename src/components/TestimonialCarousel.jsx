@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 const TestimonialCarousel = () => {
   return (
-    <div>
+    <div className="hidden sm:flex">
       <Marquee loop={0} autoFill={true} gradient={true} gradientColor="#C2DE3A"  >
         <TestimonialCard />
       </Marquee>

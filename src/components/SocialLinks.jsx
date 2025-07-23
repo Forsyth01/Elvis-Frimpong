@@ -1,43 +1,49 @@
-// components/SocialLinks.jsx
-import { FaMedium, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import React from 'react';
+import { FaLinkedin, FaGithub, FaMedium, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 const SocialLinks = () => {
+  const socialLinks = [
+    {
+      name: "LinkedIn",
+      icon: <FaLinkedin className="w-5 h-5" />,
+ url: "http://linkedin.com/in/elvisfrimpong",
+    },
+    {
+      name: "Github",
+      icon: <FaGithub className="w-5 h-5" />,
+     url: "https://github.com/elvisfrimpong-da",
+    },
+    {
+      name: "Medium",
+      icon: <FaMedium className="w-5 h-5" />,
+      url: "https://medium.com/@elvisfrimpong.da/",
+    },
+    {
+      name: "Whatsapp",
+      icon: <FaWhatsapp className="w-5 h-5" />,
+      url: "https://wa.me/message/THBQSEUKWX7LI1",
+    },
+    {
+      name: "Mail",
+      icon: <FaEnvelope className="w-5 h-5" />,
+      url: "mailto:elvisfrimpong.da@gmail.com"
+    },
+  ];
   return (
-    <div className="m-auto w-[80%] mt-10">
-    <div className="flex gap-6  items-center">
-      <a
-        href="https://medium.com/@yourusername"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-gray-600 hover:text-black transition duration-300 text-2xl"
-      >
-        <FaMedium />
-      </a>
-      <a
-        href="https://twitter.com/yourusername"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-400 hover:text-blue-600 transition duration-300 text-2xl"
-      >
-        <FaTwitter />
-      </a>
-      <a
-        href="https://linkedin.com/in/yourusername"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 hover:text-blue-800 transition duration-300 text-2xl"
-      >
-        <FaLinkedin />
-      </a>
-      <a
-        href="https://github.com/yourusername"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-gray-800 hover:text-black transition duration-300 text-2xl"
-      >
-        <FaGithub />
-      </a>
-    </div>
+    <div>
+      <div className="flex space-x-4">
+          {socialLinks.map((item, index) => (
+            <a
+              key={index}
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium tracking-tighter"
+            >
+              {item.icon}
+            </a>
+          ))}
+        </div>
     </div>
   );
 };

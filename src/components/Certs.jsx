@@ -104,7 +104,7 @@ const Certs = () => {
     <div className="bg-[#F5F8E9]">
       <div className="w-[80%] m-auto sm:p-10 pb-10 my-10 bg-[#F5F8E9] rounded-2xl">
         <div className="grid place-content-center">
-          <h1 className="sm:text-3xl text-[22px] tracking-tighter sm:font-semibold font-medium sm:text-center sm:mb-10 py-8 sm:py-0 underline underline-offset-2">
+          <h1 className="sm:text-3xl text-[28px] tracking-tighter font-semibold  text-center sm:mb-10 py-8 sm:py-0 underline underline-offset-2">
             Certifications
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 space-y-4 sm:space-y-0">

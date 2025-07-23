@@ -83,10 +83,10 @@ const Portfolio = () => {
     <section className="bg-[#F5F8E9] py-10">
       <div className="w-[90%] xs:w-[85%] mx-auto rounded-2xl">
         <div className="grid place-content-center">
-          <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-center xs:mb-8">
+          <h1 className="text-[28px] xs:text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-center mb-8">
             Projects
           </h1>
-          <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 xs:gap-6">
+          <div className="sm:grid space-y-10 sm:space-y-0 grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 xs:gap-6">
             {projects.map((project, index) => (
               <div
                 key={project.id}
